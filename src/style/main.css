@@ -1,6 +1,7 @@
 @import "./fonts/fonst.css";
 @import "./components/header.css";
 @import "./components/alert.css";
+@import "./components/sercle_button.css";
 body{
     margin: 0 auto;
     max-width: 1440px;
@@ -30,7 +31,7 @@ nav{
     --prymarygold: #DCB678;
     --secondarygold: rgba(220, 182, 120, 0.586);
     --prymaryblue: #1A4151;
-    --secondaryblue: #1A415140;
+    --secondaryblue: #1a41517c;
     --black: #252525;
     --white: #FFFFFF;
 }

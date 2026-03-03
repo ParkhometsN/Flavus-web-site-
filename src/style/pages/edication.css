@@ -1,0 +1,27 @@
+.hero_container {
+    width: 100%;
+    /* Убираем фиксированную высоту */
+}
+
+.background_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1920 / 1080; /* пропорции твоей картинки */
+    background: url("/src/assests/img/backgorunds/Background_edication.png") no-repeat center center;
+    background-size: cover; /* масштабируется пропорционально */
+}
+
+
+
+
+
+@media screen and (max-width: 834px){
+    .background_block {
+        width: 100%;
+        aspect-ratio: 375 / 667; /* пример пропорции для мобильной картинки */
+        background: url("/src/assests/img/backgorunds/background_edication_mobile.png") no-repeat center center;
+        background-size: cover;
+    }
+}

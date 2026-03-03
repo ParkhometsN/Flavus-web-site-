@@ -1,0 +1,36 @@
+@import "./fonts/fonst.css";
+@import "./components/header.css";
+@import "./components/alert.css";
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+    background-color: var(--white);
+    font-family: "inter";
+    color: var(--black);
+}
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-x:  hidden;
+    overflow-y:  auto;
+}
+html, body {
+  height: 100%;
+  overscroll-behavior-y: contain; /* уменьшает «перекатывание» на iOS/Android */
+}
+
+a{
+    color: var(--black);
+    text-decoration: none;
+}
+nav{
+    list-style: none;
+}
+:root{
+    --prymarygold: #DCB678;
+    --secondarygold: rgba(220, 182, 120, 0.586);
+    --prymaryblue: #1A4151;
+    --secondaryblue: #1A415140;
+    --black: #252525;
+    --white: #FFFFFF;
+}

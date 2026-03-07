@@ -14,10 +14,7 @@
     transition: background 300ms, transform 200ms;
     font-weight: 600;
 }
-.buttonsrcleposition{
-    position: relative;
-    top: 19%;
-}
+
 
 .button__text {
   position: absolute;
@@ -28,8 +25,8 @@
 
     > span {
         position: absolute;
-        transform: rotate(calc(11deg * var(--index)));
-        inset: -9px;
+        transform: rotate(calc(8.7deg * var(--index)));
+        inset: -12px;
     }
 }
 
@@ -39,9 +36,9 @@
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 118.5%;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
 }
 .button__circle {
   position: relative;

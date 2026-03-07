@@ -13,7 +13,10 @@
     background-size: cover; /* масштабируется пропорционально */
 }
 
-
+.buttonsrcleposition{
+    position: relative;
+    top: calc(100vw * 9 / 16 * 0.19);
+}
 
 
 

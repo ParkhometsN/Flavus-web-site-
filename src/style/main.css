@@ -2,9 +2,12 @@
 @import "./components/header.css";
 @import "./components/alert.css";
 @import "./components/sercle_button.css";
+@import "./components/yamap.css";
+@import "./components/button.css";
+@import "./components/footer.css";
 body{
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1920px;
     background-color: var(--white);
     font-family: "inter";
     color: var(--black);
@@ -30,8 +33,17 @@ nav{
 :root{
     --prymarygold: #DCB678;
     --secondarygold: rgba(220, 182, 120, 0.586);
-    --prymaryblue: #1A4151;
+    --prymaryblue: #012C3E;
     --secondaryblue: #1a41517c;
     --black: #252525;
     --white: #FFFFFF;
+}
+
+
+.tinnfont{
+    padding-top: 4vw;
+      padding-bottom: 4vw;
+    font-size: 10px;
+    font-family: "asear";
+    letter-spacing: 10px;
 }

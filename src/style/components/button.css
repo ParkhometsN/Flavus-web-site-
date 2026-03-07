@@ -1,0 +1,16 @@
+.primary_but{
+    padding: 16px 24px;
+    background-color: var(--prymaryblue);
+    box-shadow: 0 0 0 5px var(--secondaryblue);
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+.primary_but:hover{
+        box-shadow: 0 0 0 5px var(--secondarygold);
+}
+.primary_but:active{
+    opacity: 0.8;
+}

@@ -1,0 +1,62 @@
+.form {
+  --width-of-input: 100%;
+  --border-height: 1px;
+  --border-before-color: var(--white);
+  position: relative;
+  width: var(--width-of-input);
+}
+
+.input {
+  color: var(--prymaryblue);
+  font-size: 16px;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-block: 0.7em;
+
+  border: none; /* важно */
+  border-bottom: var(--border-height) solid var(--prymaryblue); /* синяя линия */
+}
+
+textarea.input {
+  /* повторяем стили инпута для textarea */
+  font-size: 16px;
+  background-color: transparent;
+  width: 100%;
+  font-weight: 200 !important;
+  box-sizing: border-box;
+  padding-block: 0em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--prymaryblue);
+  resize: vertical; 
+  min-height: 100px; 
+  font-family: "inter_bold";
+}
+
+::placeholder {
+  color: var(--prymaryblue);
+}
+
+textarea.input::placeholder {
+  color: var(--prymaryblue);
+}
+
+.input-border {
+  position: absolute;
+  background: var(--prymaryblue);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea.input:focus {
+  outline: none;
+}
+
+input:focus ~ .input-border,
+textarea.input:focus ~ .input-border {
+  width: 100%;
+}

@@ -6,16 +6,16 @@ export function GetHeader (){
                     <div  class="header-container stroke_main">
                         <div class="header-content">
                             <nav class="navigation">
-                                <li><a href="index.html"><h4>главная</h4></a></li>
-                                <li><a href="index.html#services"><h4>услуги</h4></a></li>
-                                <li><a href="index.html#about"><h4>о нас</h4></a></li>
-                                <li><a href="#footer"><h4>котнтакты</h4></a></li>
+                                <li><a href="index.html"><h4>Главная</h4></a></li>
+                                <li><a href="index.html#services"><h4>Услуги</h4></a></li>
+                                <li><a href="index.html#about"><h4>О нас</h4></a></li>
+                                <li><a href="#footer"><h4>Контакты</h4></a></li>
                             </nav>
                             <a  href="index.html" class="logo"><img src="/src/assests/img/main_logo.jpg" alt="логотип барбершопа Flavus"></a>
                             <nav class="navigation">
-                                <li><a href="education.html"><h4>академия</h4></a></li>
-                                <li><a href="vacancy.html"><h4>вакансии</h4></a></li>
-                                <li><a href="lookbook.html"><h4>lookbook</h4></a></li>
+                                <li><a href="education.html"><h4>Академия</h4></a></li>
+                                <li><a href="vacancy.html"><h4>Вакансии</h4></a></li>
+                                <li><a href="lookbook.html"><h4>Lookbook</h4></a></li>
                             </nav>
                             <div class="burgerbutton">
                                 <input class="burgerclose" type="checkbox" id="checkbox">
@@ -31,13 +31,13 @@ export function GetHeader (){
                 <div class="mobilefix">
                     <div class="header_mobile stroke_main">
                         <nav class="mobile">
-                            <li><a href="index.html"><h4>главная</h4></a></li>
-                            <li><a href="index.html#services"><h4>услуги</h4></a></li>
-                            <li><a href="index.html#about"><h4>о нас</h4></a></li>
-                            <li><a href="#footer"><h4>котнтакты</h4></a></li>
-                            <li><a href="education.html"><h4>академия</h4></a></li>
-                            <li><a href="vacancy.html"><h4>вакансии</h4></a></li>
-                            <li><a href="lookbook.html"><h4>lookbook</h4></a></li>
+                            <li><a href="index.html"><h4>Главная</h4></a></li>
+                            <li><a href="index.html#services"><h4>Услуги</h4></a></li>
+                            <li><a href="index.html#about"><h4>О нас</h4></a></li>
+                            <li><a href="#footer"><h4>Контакты</h4></a></li>
+                            <li><a href="education.html"><h4>Академия</h4></a></li>
+                            <li><a href="vacancy.html"><h4>Вакансии</h4></a></li>
+                            <li><a href="lookbook.html"><h4>Lookbook</h4></a></li>
                         </nav>
                     </div>
                 </div>

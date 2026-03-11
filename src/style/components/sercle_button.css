@@ -4,8 +4,8 @@
     border: none;
     background: var(--secondaryblue);
     color: #fff;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     /* overflow: hidden; */
     position: relative;
@@ -22,10 +22,9 @@
 
   font-size: 14px;
   animation: text-rotation 8s linear infinite;
-
     > span {
         position: absolute;
-        transform: rotate(calc(8.7deg * var(--index)));
+        transform: rotate(calc(8.1deg * var(--index)));
         inset: -12px;
     }
 }

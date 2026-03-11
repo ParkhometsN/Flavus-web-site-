@@ -13,11 +13,13 @@
     justify-content: space-between;
 }
 .titlefoter h1{
-    font-weight: 400 !important;
+    font-weight: 600 !important;
 }
 .contentblokcfooter{
+    position: relative;
+    z-index: 10;
     gap: 80px;
-    height: 220px;
+    height: 300px;
     padding: 2vw;
     display: flex;
     justify-content: space-between;
@@ -29,6 +31,7 @@
 .footer_nav{
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 .footer_nav,
 .contacntblock{
@@ -52,4 +55,75 @@
 }
 .adres_item h3{
     opacity: 0.6;
+}
+
+.footer_logo_xl{
+    position: relative;
+    z-index: 1;
+    margin-top: -180px;
+}
+
+.links_list{
+    display: flex;
+    gap: 24px;
+        flex-wrap: wrap;
+}
+
+.links_list a{
+    color: white !important;
+}
+
+.navigation_block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_nav li a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer_nav li a:hover{
+    text-decoration: underline !important;
+}
+.footer_nav li a:active{
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 1194px){
+    .contentblokcfooter {
+        height: 100%;
+        padding: 2vw;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .footer_logo_xl {
+        position: relative;
+        z-index: 1;
+        margin-top: 0px;
+    }
+.contacntblock {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navigation_block {
+    width: 100%;
+    display: flex;
+    gap: 39px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    .adress {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 31px;
+        justify-content: space-between;
+    }
+
 }

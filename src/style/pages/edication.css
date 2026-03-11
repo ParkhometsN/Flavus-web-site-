@@ -43,7 +43,7 @@
     z-index: 1;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 780px;
     background: url("/src/assests/img/education_aydent.png") no-repeat center center;
     background-size: contain;
     -webkit-user-drag: none;
@@ -109,8 +109,101 @@
 .upblock{
     margin-top: -150px;
 }
+.curses_blokc{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+.curses_content{
+    max-width: 1440px;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
+.number_cur {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px 24px 0px 24px;
+    flex-wrap: wrap;
+}
+.number_cur{
+        padding: 24px 24px 24px 24px;
+}
+.description_text_cur{
+    padding: 24px 24px 0px 24px;
+}
+.case{
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+}
+.case{
+    color: var(--white);
+}
+.number_cur{
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.icontext{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.icontext img{
+    width: 2vw;
+}
+.descooi{
+    padding: 16px 0px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.descooi h2{
+    color: var(--prymaryblue);
+}
+.this{
+    padding: 1vw;
+}
+.titleofb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}
+.borderiuj{
+    border-radius: 60px;
+    padding: 1vw 1.5vw;
+    border: 2px solid var(--prymaryblue);
+}
+.textifjj{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: -7vw;
+}
+.titleofb h1{
+    color: var(--prymaryblue);
+}
+
+.uptext{
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    color: var(--prymaryblue);
+}
+.a h4 {
+
+    color: var(--prymaryblue);
+}
 
 @media screen and (max-width: 834px){
     .background_block {
@@ -119,6 +212,22 @@
         background: url("/src/assests/img/backgorunds/background_edication_mobile.png") no-repeat center center;
         background-size: cover;
     }
+.curses_content{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.grid {
+    position: relative;
+    width: 96%;
+    max-width: 1440px;
+    margin: auto;
+}
+.casor{
+    padding-bottom: 45px;
+}
     .content_hero {
     width: 100%;
     padding: 10vw;

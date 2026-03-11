@@ -97,7 +97,7 @@
     color: var(--prymaryblue);
     width: 100%;
     height: 100%;
-    border: 2px solid #80959F;
+    border: 2px solid var(--prymaryblue);
 }
 .titlevacancy{
     padding-top: 24px;
@@ -252,6 +252,12 @@ width: 100%;
     padding-bottom: 4vw;
     padding-top: 5vw;
 }
+
+
+    .text_content img {
+        width: 100vw;
+    }
+
     .contentblokcfooter {
         height: 100%;
         padding: 6vw;

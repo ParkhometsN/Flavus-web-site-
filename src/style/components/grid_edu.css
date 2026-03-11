@@ -1,0 +1,128 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* контейнер для таблицы с квадратным аспектом */
+.grid {
+  position: relative;
+  width: 96%;
+  max-width: 1440px;
+  margin: auto;
+min-height: 750px; /* минимальная высота на десктопе */
+}
+
+.grid::after {
+  content: "";
+  display: block;
+  padding-top: 100%; /* квадратный контейнер */
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* таблица занимает весь контейнер */
+#table {
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+/* все клетки растягиваются по высоте и ширине */
+td {
+  width: 25%;
+  height: 25%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* красные квадраты */
+.a {
+    background: #DCB678;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* min-height: 150px; */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px 15px;
+}
+
+/* пустые / неиспользуемые */
+.b {
+  background: transparent;
+}
+
+/* белый квадрат */
+.this {
+  background: white;
+  min-height: 150px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* изображение */
+.imgeduc {
+  background: url("/src/assests/img/edujj.png") center/cover no-repeat;
+  background-size: cover;
+}
+
+/* Планшет: исчезает левый большой квадрат, красные выстраиваются по 2 */
+@media (max-width: 835px) {
+  .imgeduc {
+    display: none;
+  }
+
+  .b:not(.this) {
+    display: none;
+  }
+
+  #table tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .a, .this {
+    display: block;
+    width: 48%; /* два квадрата в ряд */
+    margin: 1%;  /* отступ между квадратами */
+    padding-top: 48%; /* сохраняем квадратную форму */
+    position: relative;
+  }
+    .imgeduc {
+    display: none;
+  }
+
+  .b:not(.this) {
+    display: none;
+  }
+
+  #table {
+    width: 100%;
+    height: auto;
+  }
+
+  #table tr {
+    display: block;
+  }
+
+    .a, .this {
+        display: block;
+        width: 98%;
+        padding-top: 10%;
+        margin: 5% auto;
+        position: relative;
+        padding: 24px 15px;
+    }
+}
+
+

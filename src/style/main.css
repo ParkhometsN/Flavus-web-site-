@@ -9,6 +9,7 @@
 @import "./components/checkbox.css";
 @import "./components/form.css";
 @import "./components/grid_edu.css";
+@import "/src/style/components/swithes.css";
 body{
     margin: 0 auto;
     max-width: 1920px;

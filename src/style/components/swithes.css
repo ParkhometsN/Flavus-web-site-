@@ -1,0 +1,36 @@
+.toigle_switches{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: var(--prymaryblue);
+}
+
+.toggle_item{
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.toggle_item::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: var(--prymarygold);
+    transition: width 0.3s ease;
+}
+
+.active_togle{
+    color: var(--prymarygold);
+}
+
+.active_togle::after{
+    width: 100%;
+}
+@media screen and (max-width: 834px){
+.toigle_switches h3{
+    font-size: 30px;
+}
+}

@@ -14,3 +14,6 @@
 .primary_but:active{
     opacity: 0.8;
 }
+.primary_but img{
+    width: 1.5vw;
+}

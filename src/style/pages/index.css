@@ -17,15 +17,274 @@
     position: relative;
     top: calc(100vw * 9 / 16 * 0.19);
 }
+.linebl{
+    width: 100px;
+    background-color: var(--prymaryblue); 
+    height: 1px;
+    opacity: 0.3;
+}
+.scisss{
+        width: 32vw !important;
+}
+.appmockup{
+    width: 40vw;
+}
+.faq_block{
+    width: 100%;
+}
+.faqtitle{
+    border: 1px solid #B3C0C5;
+}
+.faqtitle h1{
+    padding: 2vw;
+}
+.sercle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #B3C0C5;
+}
+.sercle{
+    transition: background-color 0.3s ease;
+}
+.faq_question{
+    padding: 2vw 2vw 1vw 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.faq_question h2{
+    cursor: pointer;
+}
+.faq_question:hover .sercle{
+    background-color: var(--prymaryblue);
+}
 
+.faq_content_ques{
+    border-bottom: 1px solid #B3C0C5;
+}
+.fac_container{
+    color: var(--prymaryblue);
+}
+.topblfaq{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.titl_tw{
+    font-size: 25px;
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    font-weight: 600;
+    line-height: 118.5%;
+    letter-spacing: -1px;
+}
+.button__circlee {
+  position: relative;
+    width: 110px;
+    height: 110px;
+  background: var(--prymaryblue);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.download_our_app{
+    max-width: 1440px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.text_contenttt{
+    color: var(--prymaryblue);
+    padding: 2vw 2vw 0vw 2vw;
+}
+
+.text_contenttt{
+        gap: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.download_our_app{
+    position: relative;
+}
+.dw{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.lookbook_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1920 / 1200; 
+    background: url("/src/assests/img/lookbook_background.png") no-repeat center center;
+    background-size: cover;
+}
+.img_block img{
+    width: 15vw;
+}
+.lookbook_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12vw 2vw;
+
+}
+
+.content_hero{
+    padding: 2vw;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.content_hero h1{
+    text-align: center;
+    color: var(--prymarygold);
+}
+
+.content_hero h2{
+        text-align: center;
+        color: var(--white);
+}
+.lookbook_logo{
+    width: 4vw;
+    padding-top: 1vw;
+}
+.img_block {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_block .glass {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  margin: 0 -45px;
+  transform: rotate(calc(var(--r) * 4deg));
+}
+.img_block:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.img_block .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.img_block .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+.faq_question h4{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+
+.faq_content_ques.active h4{
+    max-height: 200px;
+    opacity: 1;
+}
 
 
 @media screen and (max-width: 834px){
     .background_block {
         width: 100%;
-        aspect-ratio: 375 / 667; /* пример пропорции для мобильной картинки */
+        aspect-ratio: 375 / 667; 
         background: url("/src/assests/img/backgorunds/backround_index_mobile.png") no-repeat center center;
         background-size: cover;
     }
+    .appmockup {
+    width: 40vw;
+    display: none;
+}
+.img_block img {
+    width: 35vw;
+}
+.content_hero h1{
+    text-align: center;
+    color: var(--prymarygold);
+font-size: 12vw;
+}
+.text_contenttt {
+    color: var(--prymaryblue);
+    padding: 12vw 2vw 0vw 2vw;
+}
+.faq_question {
+    padding: 8vw;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+.text_contenttt {
+    gap: 90px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.faqtitle h1 {
+    padding: 6vw;
+}
+.scisss {
+    width: 94vw !important;
+}
+.dw {
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lookbook_logo {
+    width: 9vw;
+    padding-top: 1vw;
+}
+.primary_but img {
+    width: 3.5vw;
+}
+.titledow{
+    font-size: 10vw !important;
+            padding-bottom: 24px;
+}
+}
+
+
+@media screen and (max-width: 480px){
+.lookbook_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 23vw 5vw;
+}
+
 }
 

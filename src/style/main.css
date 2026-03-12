@@ -10,6 +10,7 @@
 @import "./components/form.css";
 @import "./components/grid_edu.css";
 @import "/src/style/components/swithes.css";
+@import "/src/style/components/hover_brlist.css";
 body{
     margin: 0 auto;
     max-width: 1920px;
@@ -58,4 +59,9 @@ ul {
     font-size: 10px;
     font-family: "asear";
     letter-spacing: 10px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }

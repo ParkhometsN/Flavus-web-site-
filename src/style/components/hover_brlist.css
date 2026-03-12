@@ -1,0 +1,188 @@
+/* Контейнер всей секции */
+.barber_container {
+    display: flex;
+        padding: 2vw 0vw;
+    align-items: flex-start;
+}
+
+/* Левая часть — сетка маленьких мастеров */
+.barber_left {
+    flex: 1 1 60%;
+}
+
+/* Сетка мастеров в несколько рядов по 4 в ряд */
+.barber_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 30px;
+
+}
+.barberslist{
+  padding: 2vw 2vw 10vw 2vw;
+}
+.barbers_item {
+    flex: 1 1 calc(25% - 10px); /* 4 мастера в ряд */
+    max-width: calc(25% - 10px);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+
+/* Блок с именем и должностью */
+.barbers_item .info_top {
+    margin-bottom: 5px;
+}
+
+/* Фото мастера */
+.barbers_item img {
+       pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+.category,
+.name_of_barber{
+        color: var(--prymaryblue);
+}
+
+/* Блок с номером мастера */
+.barber_number {
+    color: var(--prymaryblue);
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Правая часть — большая фотография */
+.barber_right {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.large_barber {
+    width: 100%;
+    text-align: center;
+}
+
+.large_barber .info_top {
+margin-bottom: 5px;
+    text-align: left;
+}
+.info_top{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+.large_barber img {
+    width: 100%;
+    object-fit: cover;
+    height: 46.7vw;
+    border-radius: 0;
+}
+
+.textblokc_barber h1{
+font-size: 8vw;
+    color: var(--prymaryblue);
+}
+.trr{
+    display: flex;
+    gap: 16px;
+}
+.trr img{
+    width: 6vw;
+}
+.textblokc_barber {
+    display: flex;
+    padding-bottom: 2vw;
+    justify-content: space-between;
+}
+.name_andbut{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 16px;
+}
+.brlist h5{
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+.brlist h4{
+    flex-wrap: wrap;
+    font-size: 24px;
+}
+/* Адаптивка */
+
+/* До 1200px — 3 маленьких мастера в ряд */
+@media (max-width: 1200px) {
+    .barbers_item {
+        flex: 1 1 calc(33.33% - 10px);
+        max-width: calc(33.33% - 10px);
+    }
+}
+
+/* До 768px — 2 маленьких мастера в ряд, большая фотография сверху */
+@media (max-width: 768px) {
+    .barber_container {
+        flex-direction: column-reverse;
+    }
+    .barbers_item {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+    .iiuhdd,
+    .barber_right{
+        display: none;
+    }
+    .barbers_item img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    width: 100%;
+    height: 65vw;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+.textblokc_barber h1 {
+    font-size: 13vw;
+    color: var(--prymaryblue);
+}
+}
+
+/* До 480px — 1 мастер в ряд */
+@media (max-width: 480px) {
+    .barbers_item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .textblokc_barber {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    padding-bottom: 10vw;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.fewf{
+    width: 100%;
+}
+    .textblokc_barber h1 {
+        font-size: 20vw;
+        color: var(--prymaryblue);
+    }
+    .trr img {
+    width: 15vw;
+}
+}

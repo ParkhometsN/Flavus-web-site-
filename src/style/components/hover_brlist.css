@@ -19,7 +19,7 @@
 
 }
 .barberslist{
-  padding: 2vw 2vw 10vw 2vw;
+  padding: 2vw 2vw 2vw 2vw;
 }
 .barbers_item {
     flex: 1 1 calc(25% - 10px); /* 4 мастера в ряд */
@@ -133,7 +133,7 @@ font-size: 8vw;
 }
 
 /* До 768px — 2 маленьких мастера в ряд, большая фотография сверху */
-@media (max-width: 768px) {
+@media (max-width: 834px) {
     .barber_container {
         flex-direction: column-reverse;
     }
@@ -159,6 +159,18 @@ font-size: 8vw;
     font-size: 13vw;
     color: var(--prymaryblue);
 }
+.service-row {
+    padding-top: 15px;
+    margin-left: 25px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #B3C0C5;
+    display: grid;
+    grid-template-columns: 50vw 23vw 14vw 0vw;
+}
+.service-name h5{
+    font-size: 24px;
+}
+
 }
 
 /* До 480px — 1 мастер в ряд */

@@ -1,8 +1,4 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 /* контейнер для таблицы с квадратным аспектом */
 .grid {
@@ -76,7 +72,7 @@ td {
 }
 
 /* Планшет: исчезает левый большой квадрат, красные выстраиваются по 2 */
-@media (max-width: 835px) {
+@media (max-width: 834px) {
   .imgeduc {
     display: none;
   }

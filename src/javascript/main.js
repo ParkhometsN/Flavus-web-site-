@@ -3,6 +3,7 @@ import { faqquestion } from "./modules/faq_question.js";
 import { GetFooter } from "./modules/footer.js";
 import { GetHeader } from "./modules/header.js";
 import { loadStaffData } from "./modules/load_list_barbers.js";
+import { price } from "./modules/price.js";
 import { tgl } from "./modules/togle.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tgl();
         faqquestion();
         loadStaffData();
+        price();
     } catch (error) {
         console.error(error);
     }

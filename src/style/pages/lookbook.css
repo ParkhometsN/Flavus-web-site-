@@ -67,7 +67,60 @@
     flex-direction: column;
 }
 
+
+    .haircuts-section {
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .haircuts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 2vw;
+    }
+
+    .haircut-card {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .haircut-card__id {
+      color: var(--prymarygold);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .haircut-card__image {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .haircut-card__title {
+      color: var(--prymaryblue);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .haircut-card__description {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.4;
+      color: var(--text-color);
+    }
+
+
+
 @media screen and (max-width: 834px){
+          .haircuts-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
     .background_block {
         width: 100%;
         aspect-ratio: 375 / 667; /* пример пропорции для мобильной картинки */
@@ -75,4 +128,11 @@
         background-size: cover;
     }
 }
+
+
+    @media (max-width: 560px) {
+      .haircuts-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 

@@ -432,6 +432,45 @@ grid-template-columns: 10vw 10vw 5vw 10vw;
     display: flex;
     flex-direction: column;
 }
+
+
+
+
+
+
+
+
+/* .weifhoiwefowiehf {
+    display: flex;
+    max-width: 30vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+ 
+.stroke__item {
+    flex-shrink: 0;
+    font-size: clamp(1.125rem, 0.8023rem + 1.2064vw, 2.25rem);
+    line-height: 1.5;
+    font-weight: 900;
+    text-transform: uppercase;
+    animation: running-animation 20s linear infinite;
+    white-space: nowrap;
+}
+ 
+@keyframes running-animation {
+    0% {
+        transform: translateZ(0);
+    }
+ 
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+} */
+
+
+
+
+
 @media screen and (max-width: 834px){
     .background_block {
         width: 100%;

@@ -11,6 +11,7 @@
 @import "./components/grid_edu.css";
 @import "/src/style/components/swithes.css";
 @import "/src/style/components/hover_brlist.css";
+@import "./components/tootlip.css";
 body{
     margin: 0 auto;
     max-width: 1920px;

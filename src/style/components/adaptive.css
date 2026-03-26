@@ -22,24 +22,7 @@
 } */
 
 /* Минимальный размер зоны нажатия 44×44px (Apple HIG, WCAG) */
-@media (pointer: coarse) {
-    .toggle,
-    .topblfaq,
-    .toggle_item {
-        min-height: 44px;
-        min-width: 44px;
-        padding: 12px;
-    }
-    .price-category-header {
-        min-height: 44px;
-        padding: 12px 0;
-    }
-    .primary_but,
-    .button {
-        min-height: 44px;
-        padding: 12px 20px;
-    }
-}
+
 
 /* Минимальный размер шрифта для читаемости */
 .type_price h4,

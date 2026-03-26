@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lookbook Flavus — галерея мужских стрижек: Old School и New School. Fade, Crop, Mullet, Pompadour и другие стили от барбершопа Flavus в Санкт-Петербурге.">
+    <meta name="keywords" content="lookbook, стрижки, мужские прически, Fade, Crop, Mullet, Pompadour, барбершоп Flavus">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://flavus.ru/lookbook.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assests/img/deployseo/favicon_32.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assests/img/deployseo/apple-touch-icon.webp">
+    <meta name="theme-color" content="#012C3E">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://flavus.ru/lookbook.html">
+    <meta property="og:title" content="Lookbook — галерея стрижек | Барбершоп Flavus">
+    <meta property="og:description" content="Old School и New School. Fade, Crop, Mullet, Pompadour и другие стили.">
+    <meta property="og:image" content="https://flavus.ru/src/assests/img/deployseo/banner.webp">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lookbook | Барбершоп Flavus">
     <link rel="stylesheet" href="./src/style/main.css">
     <link rel="stylesheet" href="./src/style/pages/lookbook.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
-    <title>Lookbook Flavus</title>
+    <title>Lookbook — галерея стрижек | Барбершоп Flavus</title>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"CollectionPage","name":"Lookbook — галерея стрижек Flavus","description":"Галерея мужских стрижек Old School и New School","url":"https://flavus.ru/lookbook.html","isPartOf":{"@type":"WebSite","name":"Flavus","url":"https://flavus.ru"}}
+    </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Перейти к содержимому</a>
     <div class="wrapper">
         <header>
             <div class="header_container"></div>
         </header>
-        <main>
+        <main id="main">
             <div class="hero_container">
                 <div class="background_block">
                     <div class="content_hero">
@@ -28,9 +47,9 @@
                     <div class="desc_content">
                         <h2>В разделе Old School представлена классика, проверенная временем: строгие формы, четкие линии и элегантные силуэты — от легендарного Pompadour до брутального Buzz Cut и элегантного Side Part. Это стрижки, которые всегда остаются в моде и подчеркивают мужской характер. В разделе New School собраны современные тренды барберинга: смелые переходы, текстуры и актуальные формы. Здесь ты увидишь модный Fade с плавными переходами, дерзкий Mullet, стильный Crop с текстурной челкой и другие трендовые варианты, которые носят сейчас.</h2>
                     </div>
-                    <div class="toigle_switches">
-                        <h3 class="toggle_item active_togle" data-category="new_school">new school</h3>
-                        <h3 class="toggle_item" data-category="old_school">old school</h3>
+                    <div class="toigle_switches" role="tablist" aria-label="Категории стрижек">
+                        <h3 class="toggle_item active_togle" data-category="new_school" role="tab" aria-selected="true" tabindex="0">new school</h3>
+                        <h3 class="toggle_item" data-category="old_school" role="tab" aria-selected="false" tabindex="-1">old school</h3>
                     </div>
                 </div>
             </div>
@@ -50,55 +69,55 @@
             id: "01",
             name: "Fade",
             description: "Плавный, «дымчатый» переход от коротких висков и затылка к более длинной макушке. Чистая классика современного барберинга, которая придает образу опрятность и графичность.",
-            image_path: "./src/assests/img/lookbookhaircuts/newSchool/fade.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/Fade.webp"
           },
           {
             id: "02",
             name: "Crop",
             description: "Текстурная мужская стрижка с акцентированной прямой или рваной челкой, направленной вперед. Идеальный баланс между брутальностью и минимализмом, не требующий сложной укладки.",
-            image_path: "./src/assests/img/lookbookhaircuts/newSchool/crop.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/Crop.webp"
           },
           {
             id: "03",
             name: "Curtains/Шторки",
             description: "Культовый образ из 90-х, который мягко подчеркивает черты лица и придает внешности долю романтизма.",
-            image_path: "src/assests/img/lookbookhaircuts/newSchool/Шторки.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/Шторки.webp"
           },
           {
             id: "01",
             name: "Crew cut",
             description: "Короткая и практичная стрижка, где волосы на макушке чуть длиннее, чем по бокам. Сдержанный армейский стиль, который выглядит мужественно и максимально прост в уходе.",
-            image_path: "./src/assests/img/lookbookhaircuts/newSchool/crew-cut.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/crew-cut.webp"
           },
           {
             id: "02",
             name: "Volfcut",
             description: "Многослойная, дерзкая стрижка с рваными прядями и выраженным объемом в верхней части. Сочетает в себе эстетику маллета и шегги, создавая эффект творческого хаоса и свободы.",
-            image_path: "./src/assests/img/lookbookhaircuts/newSchool/volfcut.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/volfcut.webp"
           },
           {
             id: "03",
             name: "French cut",
             description: "Вариация кропа с более удлиненной челкой и выраженной текстурой по всей длине. Выглядит небрежно, но элегантно, отлично маскирует неровности линии роста волос.",
-            image_path: "./src/assests/img/lookbookhaircuts/newSchool/french-cut.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/french-cut.webp"
           },
           {
             id: "01",
             name: "Undercut",
             description: "Резкий контраст между выбритыми висками и длинными волосами на макушке без плавного перехода. Смелый и дерзкий выбор, позволяющий собирать верх в хвост или зачесывать назад.",
-            image_path: "./src/assests/img/lookbookhaircuts/newSchool/undercut.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/Undercut.webp"
           },
           {
             id: "02",
             name: "Mod",
             description: "Удлиненная стрижка с густой челкой и бакенбардами, вдохновленная британской культурой 60-х. Ретро-эстетика для тех, кто предпочитает рок-н-ролльный стиль и мягкие формы.",
-            image_path: "./src/assests/img/lookbookhaircuts/newSchool/mod.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/Mod.webp"
           },
           {
             id: "03",
             name: "Mullet",
             description: "Легендарная форма «бизнес спереди, вечеринка сзади» с короткими висками и длинным затылком. Эпатажный стиль, который вернулся в тренды как символ самовыражения и бунтарства.",
-            image_path: "./src/assests/img/lookbookhaircuts/newSchool/mullet.png"
+            image_path: "./src/assests/img/lookbookhaircuts/newSchool/Mullet.webp"
           }
         ],
         old_school: [
@@ -106,55 +125,55 @@
             id: "01",
             name: "Buzz Cut",
             description: "Короткая стрижка одной длины по всей голове, выполняется машинкой. Не требует укладки, носится без ухода, коррекция по мере отрастания.",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/buzz-cut.png"
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/buzz-cut.webp"
           },
           {
             id: "02",
             name: "Crew with a part",
             description: "Классический крю с четким пробором добавляет аккуратности и структуры образу. Сдержанный стиль с современным характером.",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/crew-with-a-part.png"
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/Crew-with-a-part.webp"
           },
           {
             id: "03",
             name: "Side part",
             description: "Элегантная классика с естественным пробором, проверенная временем. Создает аккуратный и уверенный деловой образ.",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/side-part.png"
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/side-part.webp"
           },
           {
             id: "01",
             name: "Flattop",
             description: "Верх выстригается в плоскую горизонтальную площадку, бока короткие. Носится с жесткой укладкой вверх, требует точной формы и частой коррекции.",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/flattop.png"
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/Flattop.webp"
           },
           {
             id: "02",
             name: "Slick back",
             description: "Средняя или длинная длина сверху, зачесанная назад. Укладывается с использованием стайлинга, держится за счет средств.",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/slick-back.png"
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/slick-back.webp"
           },
           {
             id: "03",
             name: "Scumback Boogie",
-            description: "стабильный заработок от 100 тыс. рублей еженедельные выплаты океан клиентов карьерный и личностный рост",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/scumback-boogie.png"
+            description: "Классическая стрижка с объёмом на затылке и плавным переходом. Сочетает ретро-эстетику с современной аккуратностью.",
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/scumback-boogie.webp"
           },
           {
             id: "01",
             name: "Pompadour",
             description: "Объемный верх с плавным переходом — символ стиля и харизмы. Классика, которая всегда выглядит эффектно.",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/pompadour.png"
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/Pompadour.webp"
           },
           {
             id: "02",
             name: "The ted",
             description: "Резкие линии и контраст создают дерзкий, почти агрессивный образ. Для тех, кто не боится выделяться.",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/the-ted.png"
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/the-ted.webp"
           },
           {
             id: "03",
             name: "Mullet",
-            description: "стабильный заработок от 100 тыс. рублей еженедельные выплаты океан клиентов карьерный и личностный рост",
-            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/mullet.png"
+            description: "Легендарная форма «бизнес спереди, вечеринка сзади» с короткими висками и длинным затылком. Классика мужского стиля.",
+            image_path: "./src/assests/img/lookbookhaircuts/oldSchool/Mullet.webp"
           }
         ]
       }
@@ -168,7 +187,7 @@
 
       card.innerHTML = `
         <h4 class="haircut-card__id">[ ${item.id}</h4>
-        <img class="haircut-card__image" src="${item.image_path}" alt="${item.name}">
+        <img class="haircut-card__image" src="${item.image_path}" alt="Стрижка ${item.name}" loading="lazy">
         <h4 class="haircut-card__title">${item.name}</h4>
         <h5 class="haircut-card__description">${item.description}</h5>
       `;

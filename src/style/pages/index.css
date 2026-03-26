@@ -9,7 +9,7 @@
     justify-content: center;
     width: 100%;
     aspect-ratio: 1920 / 1080; /* пропорции твоей картинки */
-    background: url("/src/assests/img/backgorunds/Background_index_laptop.png") no-repeat center center;
+    background: url("/src/assests/img/backgorunds/Background_index_laptop.webp") no-repeat center center;
     background-size: cover; /* масштабируется пропорционально */
 }
 
@@ -27,7 +27,7 @@
         width: 32vw !important;
 }
 .appmockup{
-    width: 40vw;
+    width: 1300px;
 }
 .faq_block{
     width: 100%;
@@ -128,7 +128,7 @@
     justify-content: center;
     width: 100%;
     aspect-ratio: 1920 / 1200; 
-    background: url("/src/assests/img/lookbook_background.png") no-repeat center center;
+    background: url("/src/assests/img/lookbook_background.webp") no-repeat center center;
     background-size: cover;
 }
 .img_block img{
@@ -291,7 +291,7 @@
     width: 100%;
     margin-top: -180px;
     aspect-ratio: 2632 / 1080;
-    background: url(/src/assests/img/tv_sertificate.png) no-repeat center center;
+    background: url(/src/assests/img/tv_sertificate.webp) no-repeat center center;
     background-size: cover;
 }
 
@@ -392,11 +392,11 @@ grid-template-columns: 10vw 10vw 5vw 10vw;
 }
 .service-row_barberimg{
     color: var(--prymaryblue);
-    padding: 0.84vw;
-   border-top: 1px solid #B3C0C5;
+    padding: 1vw;
+    border-top: 1px solid #B3C0C5;
     border-bottom: 1px solid #B3C0C5;
     display: flex;
-        width: 100%;
+    width: 100%;
 }
 
 .price_acc_blocs{
@@ -475,7 +475,7 @@ grid-template-columns: 10vw 10vw 5vw 10vw;
     .background_block {
         width: 100%;
         aspect-ratio: 375 / 667; 
-        background: url("/src/assests/img/backgorunds/backround_index_mobile.png") no-repeat center center;
+        background: url("/src/assests/img/backgorunds/backround_index_mobile.webp") no-repeat center center;
         background-size: cover;
     }
     .appmockup {

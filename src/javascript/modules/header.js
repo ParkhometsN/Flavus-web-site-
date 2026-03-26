@@ -11,15 +11,15 @@ export function GetHeader (){
                                 <li><a href="index.html#about"><h4>О нас</h4></a></li>
                                 <li><a href="#footer"><h4>Контакты</h4></a></li>
                             </nav>
-                            <a  href="index.html" class="logo"><img src="/src/assests/img/main_logo.jpg" alt="логотип барбершопа Flavus"></a>
+                            <a  href="index.html" class="logo"><img src="/src/assests/img/main_logo.webp" alt="логотип барбершопа Flavus"></a>
                             <nav class="navigation">
                                 <li><a href="education.html"><h4>Академия</h4></a></li>
                                 <li><a href="vacancy.html"><h4>Вакансии</h4></a></li>
                                 <li><a href="lookbook.html"><h4>Lookbook</h4></a></li>
                             </nav>
                             <div class="burgerbutton">
-                                <input class="burgerclose" type="checkbox" id="checkbox">
-                                <label for="checkbox" class="toggle">
+                                <input class="burgerclose" type="checkbox" id="checkbox" aria-label="Открыть меню" aria-expanded="false">
+                                <label for="checkbox" class="toggle" role="button" tabindex="0">
                                     <div class="bars" id="bar1"></div>
                                     <div class="bars" id="bar2"></div>
                                     <div class="bars" id="bar3"></div>
@@ -50,6 +50,9 @@ function OpenBurgerMenu (){
     const MobileBurger = document.querySelector('.header_mobile')
     const ButtonOpenBurger = document.getElementById('checkbox')
     let isvisible = false
+    const updateAria = () => {
+        ButtonOpenBurger.setAttribute('aria-expanded', String(!isvisible));
+    };
     ButtonOpenBurger.addEventListener('click', function() {
         if (isvisible) {
             MobileBurger.style.display = 'none' 
@@ -57,5 +60,9 @@ function OpenBurgerMenu (){
             MobileBurger.style.display = 'block' 
         }
         isvisible = !isvisible
+        updateAria()
+    })
+    document.querySelector('.toggle')?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); ButtonOpenBurger.click(); }
     })
 }

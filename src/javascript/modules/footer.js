@@ -1,11 +1,11 @@
-import { initMap } from "./ymap.js";
+import { initYmapsWhenNeeded } from "./ymap-loader.js";
 
 export function GetFooter(){
     const footerEl = document.getElementById("footer") ?? document.querySelector("footer");
     if (!footerEl) return;
 
     if (footerEl.dataset.footerInited === "1") {
-        initMap();
+        initYmapsWhenNeeded();
         return;
     }
     footerEl.dataset.footerInited = "1";
@@ -54,23 +54,22 @@ export function GetFooter(){
                                 <li><a href="index.html"><h4>главная</h4></a></li>
                                 <li><a href="index.html#services"><h4>услуги</h4></a></li>
                                 <li><a href="index.html#about"><h4>о нас</h4></a></li>
-                                <li><a href="#footer"><h4>котнтакты</h4></a></li>
+                                <li><a href="#footer"><h4>контакты</h4></a></li>
                                 <li><a href="education.html"><h4>академия</h4></a></li>
                                 <li><a href="vacancy.html"><h4>вакансии</h4></a></li>
                                 <li><a href="lookbook.html"><h4>lookbook</h4></a></li>
                             </nav>
                             <div class="links_list">
-                                <a href="#"><h4>ВCЕ ПРАВА ЗАЩИЩЕННЫ </h4></a>
-                                <a href="/confidenc.html"><h4>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ </h4></a>
+                                <a href="index.html"><h4>ВСЕ ПРАВА ЗАЩИЩЕНЫ</h4></a>
+                                <a href="confidenc.html"><h4>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h4></a>
                             </div>
                         </div>
                     </div>
-                    <img class="footer_logo_xl" src="./src/assests/img/footer/logoflavusdk.png" alt="ewfrgt">
+                    <img class="footer_logo_xl" src="./src/assests/img/footer/logoflavusdk.webp" alt="ewfrgt">
                 </div>
             </div>
         </div>
     `;
 
-    // Важно: сначала вставили контейнер #map, потом инициализировали карту
-    initMap();
+    initYmapsWhenNeeded();
 }

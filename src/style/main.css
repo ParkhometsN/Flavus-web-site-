@@ -9,9 +9,24 @@
 @import "./components/checkbox.css";
 @import "./components/form.css";
 @import "./components/grid_edu.css";
-@import "/src/style/components/swithes.css";
-@import "/src/style/components/hover_brlist.css";
+@import "./components/swithes.css";
+@import "./components/hover_brlist.css";
 @import "./components/tootlip.css";
+@import "./components/adaptive.css";
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: var(--prymaryblue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+}
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
 body{
     margin: 0 auto;
     max-width: 1920px;
@@ -20,14 +35,22 @@ body{
     color: var(--black);
 }
 html{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    overflow-x:  hidden;
-    overflow-y:  auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+html::-webkit-scrollbar {
+    display: none;
 }
 html, body {
-  height: 100%;
-  overscroll-behavior-y: contain; /* уменьшает «перекатывание» на iOS/Android */
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    -ms-overflow-style: none;
 }
 
 a{
@@ -56,10 +79,10 @@ ul {
 }
 .tinnfont{
     padding-top: 4vw;
-      padding-bottom: 4vw;
-    font-size: 10px;
+    padding-bottom: 4vw;
+    font-size: clamp(8px, 2.5vw, 12px);
     font-family: "asear";
-    letter-spacing: 10px;
+    letter-spacing: clamp(4px, 2vw, 10px);
 }
 
 img {

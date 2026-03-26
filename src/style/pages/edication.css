@@ -9,7 +9,7 @@
     justify-content: center;
     width: 100%;
     aspect-ratio: 1920 / 1080; /* пропорции твоей картинки */
-    background: url("/src/assests/img/backgorunds/Background_edication.png") no-repeat center center;
+    background: url("/src/assests/img/backgorunds/Background_edication.webp") no-repeat center center;
     background-size: cover; /* масштабируется пропорционально */
 }
 
@@ -44,7 +44,7 @@
     position: absolute;
     width: 100%;
     height: 780px;
-    background: url("/src/assests/img/education_aydent.png") no-repeat center center;
+    background: url("/src/assests/img/education_aydent.webp") no-repeat center center;
     background-size: contain;
     -webkit-user-drag: none;
     user-select: none;
@@ -209,7 +209,7 @@
     .background_block {
         width: 100%;
         aspect-ratio: 375 / 667; /* пример пропорции для мобильной картинки */
-        background: url("/src/assests/img/backgorunds/background_edication_mobile.png") no-repeat center center;
+        background: url("/src/assests/img/backgorunds/background_edication_mobile.webp") no-repeat center center;
         background-size: cover;
     }
 .curses_content{

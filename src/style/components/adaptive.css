@@ -1,0 +1,154 @@
+/**
+ * Адаптивность и кроссбраузерность — максимальная совместимость
+ * Breakpoints: 320, 375, 480, 560, 650, 768, 834, 1024, 1200, 1440
+ */
+
+/* Safe area для iPhone X+ и устройств с вырезами */
+/* @supports (padding: max(0px)) {
+    .wrapper,
+    body {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+    }
+    .headerfix,
+    .main_header_positon {
+        padding-left: max(20px, calc(20px + env(safe-area-inset-left)));
+        padding-right: max(20px, calc(20px + env(safe-area-inset-right)));
+    }
+    footer#footer,
+    .conternt_footer {
+        padding-bottom: max(0px, env(safe-area-inset-bottom));
+    }
+} */
+
+/* Минимальный размер зоны нажатия 44×44px (Apple HIG, WCAG) */
+@media (pointer: coarse) {
+    .navigation li a,
+    .footer_nav li a {
+        min-height: 44px;
+        padding: 10px 14px !important;
+        display: inline-flex !important;
+        align-items: center;
+    }
+    .toggle,
+    .topblfaq,
+    .toggle_item {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px;
+    }
+    .price-category-header {
+        min-height: 44px;
+        padding: 12px 0;
+    }
+    .primary_but,
+    .button {
+        min-height: 44px;
+        padding: 12px 20px;
+    }
+}
+
+/* Минимальный размер шрифта для читаемости */
+.type_price h4,
+.qwoiefhio h4,
+.service-price h4 {
+    font-size: clamp(12px, 1.25vw, 18px) !important;
+}
+
+/* Очень маленькие экраны 320-374px */
+@media screen and (max-width: 374px) {
+    .header-content {
+        padding: 10px 12px !important;
+    }
+    .headerfix {
+        padding: 12px !important;
+    }
+    .content_hero h1,
+    .title_hero {
+        font-size: 10vw !important;
+    }
+    .sertificate_content,
+    .about_container {
+        padding: 2vw 3vw !important;
+    }
+    .formseco .form,
+    .name_form .form {
+        width: 100% !important;
+    }
+}
+
+/* Планшеты 768-833px */
+@media screen and (min-width: 768px) and (max-width: 833px) {
+    .contentblokcfooter {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .price_acc_blocs {
+        flex-direction: column;
+    }
+}
+
+/* Десктоп 1024-1199px */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .service-row_barber {
+        margin-left: 20vw;
+    }
+    .clgrw {
+        width: 18vw;
+    }
+}
+
+/* Улучшение скролла на touch-устройствах */
+@media (hover: none) {
+    .button:hover,
+    .primary_but:hover,
+    a:hover {
+        -webkit-tap-highlight-color: transparent;
+    }
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media screen and (max-width: 834px) {
+    input,
+    select,
+    textarea {
+        font-size: max(16px, 1rem) !important;
+    }
+}
+
+/* Высота 100dvh для мобильных (учитывает адресную строку) */
+@supports (height: 100dvh) {
+    html, body {
+        min-height: 100dvh;
+    }
+}
+
+/* Плавное изменение размеров при resize */
+img,
+video,
+.background_block,
+.price_category_img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Предотвращение горизонтального скролла */
+html {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Исправление переполнения на мобильных */
+@media screen and (max-width: 834px) {
+    .scisss {
+        max-width: 94vw !important;
+    }
+}
+
+/* Контейнер с учётом safe-area */
+.page-container {
+    padding-left: env(safe-area-inset-left, 0);
+    padding-right: env(safe-area-inset-right, 0);
+}

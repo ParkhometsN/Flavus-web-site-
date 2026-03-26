@@ -9,7 +9,7 @@
     justify-content: center;
     width: 100%;
     aspect-ratio: 1920 / 1080; /* пропорции твоей картинки */
-    background: url("/src/assests/img/backgorunds/background_lookbook.png") no-repeat center center;
+    background: url("/src/assests/img/backgorunds/background_lookbook.webp") no-repeat center center;
     background-size: cover; /* масштабируется пропорционально */
 }
 
@@ -124,7 +124,7 @@
     .background_block {
         width: 100%;
         aspect-ratio: 375 / 667; /* пример пропорции для мобильной картинки */
-        background: url("/src/assests/img/backgorunds/backround_indexbackground_lookbook.png") no-repeat center center;
+        background: url("/src/assests/img/backgorunds/backround_indexbackground_lookbook.webp") no-repeat center center;
         background-size: cover;
     }
     .desc_container {

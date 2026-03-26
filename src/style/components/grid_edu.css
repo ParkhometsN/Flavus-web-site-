@@ -68,7 +68,7 @@ td {
 
 /* изображение */
 .imgeduc {
-  background: url("/src/assests/img/edujj.png") center/cover no-repeat;
+  background: url("/src/assests/img/edujj.webp") center/cover no-repeat;
   background-size: cover;
 }
 

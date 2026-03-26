@@ -23,13 +23,6 @@
 
 /* Минимальный размер зоны нажатия 44×44px (Apple HIG, WCAG) */
 @media (pointer: coarse) {
-    .navigation li a,
-    .footer_nav li a {
-        min-height: 44px;
-        padding: 10px 14px !important;
-        display: inline-flex !important;
-        align-items: center;
-    }
     .toggle,
     .topblfaq,
     .toggle_item {
@@ -57,12 +50,6 @@
 
 /* Очень маленькие экраны 320-374px */
 @media screen and (max-width: 374px) {
-    .header-content {
-        padding: 10px 12px !important;
-    }
-    .headerfix {
-        padding: 12px !important;
-    }
     .content_hero h1,
     .title_hero {
         font-size: 10vw !important;

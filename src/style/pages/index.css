@@ -26,8 +26,9 @@
 .scisss{
         width: 32vw !important;
 }
-.appmockup{
-    width: 1300px;
+.appmockup {
+    width: 40vw;
+    height: 43vw;
 }
 .faq_block{
     width: 100%;

@@ -1,7 +1,7 @@
 /**
  * Ленивая загрузка Яндекс.Карт — загружает API только когда футер в зоне видимости
  */
-import { CONFIG } from '../config.js';
+import { CONFIG } from './config.js';
 
 let scriptLoaded = false;
 let scriptLoading = false;

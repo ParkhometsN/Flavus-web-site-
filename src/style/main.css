@@ -11,8 +11,8 @@
 @import "./components/grid_edu.css";
 @import "./components/swithes.css";
 @import "./components/hover_brlist.css";
-@import "./components/tootlip.css";
 @import "./components/adaptive.css";
+@import "./components/animation.css";
 .skip-link {
     position: absolute;
     left: -9999px;

@@ -8,3 +8,7 @@ export const CONFIG = {
 export const telegramapi = {
     TELEGRAM_API_BOT: '8699168961:AAFbwBYpJPL2OK0B_oM_SbGvrIglAxafVs0'
 };
+
+export const chatid_TELEGRAM = {
+    CHAT_ID: '866843496'
+};

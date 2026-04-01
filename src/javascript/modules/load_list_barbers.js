@@ -1,6 +1,6 @@
 export async function loadStaffData() {
-    const PARTNER_TOKEN = 'kukfs7kk3pzfgb448ta2'; 
-    const BRANCH_ID = '733381'; 
+    const PARTNER_TOKEN = 'mh8k4exn6yzbm39jhdx3'; 
+    const BRANCH_ID = '1075535'; 
     const URL = `https://api.yclients.com/api/v1/staff/${BRANCH_ID}`;
 
     try {

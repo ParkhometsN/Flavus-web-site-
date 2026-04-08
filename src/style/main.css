@@ -13,6 +13,7 @@
 @import "./components/hover_brlist.css";
 @import "./components/adaptive.css";
 @import "./components/animation.css";
+@import "./pages/con.css";
 .skip-link {
     position: absolute;
     left: -9999px;

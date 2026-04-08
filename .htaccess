@@ -1,0 +1,35 @@
+# .htaccess для проекта Flavus
+# SEO, HTTPS, canonical redirects и базовая защита
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Force HTTPS and non-www canonical domain
+    RewriteCond %{HTTPS} !=on [OR]
+    RewriteCond %{HTTP_HOST} !^flavus\.ru$ [NC]
+    RewriteRule ^ https://flavus.ru%{REQUEST_URI} [R=301,L]
+
+    # Redirect index.html to root URL
+    RewriteRule ^index\.html$ / [R=301,L]
+
+    # Disable direct access to sensitive files and folders
+    RewriteRule ^(?:\.git|composer\.json|composer\.lock|conf\.ini|lang\.ini|admin/(?:conf|lang)\.ini|update\.php|phpmailer/).*$ - [F,L]
+
+    # Custom 404 page
+    ErrorDocument 404 /404.html
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+DirectoryIndex index.html index.php

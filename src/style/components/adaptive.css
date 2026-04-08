@@ -56,7 +56,9 @@
     .price_acc_blocs {
         flex-direction: column;
     }
+
 }
+
 
 /* Десктоп 1024-1199px */
 @media screen and (min-width: 1024px) and (max-width: 1199px) {

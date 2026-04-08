@@ -4,7 +4,6 @@ import { GetFooter } from "./modules/footer.js";
 import { GetHeader } from "./modules/header.js";
 import { loadStaffData } from "./modules/load_list_barbers.js";
 import { price } from "./modules/price.js";
-import { initForm } from "./modules/tg_form.js";
 import { tgl } from "./modules/togle.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -17,10 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         faqquestion();
         loadStaffData();
         price();
-        initForm();
-
-
-
     } catch (error) {
         console.error(error);
     }

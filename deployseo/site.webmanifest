@@ -10,13 +10,13 @@
   "lang": "ru",
   "icons": [
     {
-      "src": "/src/assests/img/deployseo/android-chrome-192x192.png",
+      "src": "/src/assests/img/deployseo/android-chrome-192x192.webp",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/src/assests/img/deployseo/android-chrome-512x512.png",
+      "src": "/src/assests/img/deployseo/android-chrome-512x512.webp",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

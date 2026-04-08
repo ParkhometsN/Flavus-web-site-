@@ -38,7 +38,7 @@ export function initMap() {
 
         firstPlacemark.events.add("click", (e) => {
             window.open(
-                "https://yandex.com/maps/2/saint-petersburg/?ll=30.440808%2C59.906007&mode=poi&poi%5Bpoint%5D=30.440792%2C59.905962&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D11827325137&z=20.39",
+                "https://yandex.com/maps/2/saint-petersburg/?ll=30.440719%2C59.906003&mode=poi&poi%5Bpoint%5D=30.440788%2C59.905971&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D161808942293&z=20.28",
                 "_blank"
             );
             e.stopPropagation();

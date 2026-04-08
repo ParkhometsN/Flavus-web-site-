@@ -1,46 +1,23 @@
-# .htaccess для проекта Flavus (flavus-barbershop.ru)
-# SEO, HTTPS, базовая защита
+# .htaccess для Reg.ru хостинга (flavus-barbershop.ru)
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # Force HTTPS и правильный домен (flavus-barbershop.ru)
-    RewriteCond %{HTTPS} !=on [OR]
+    # Редирект на HTTPS и правильный домен
+    RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} !^flavus-barbershop\.ru$ [NC]
-    RewriteRule ^ https://flavus-barbershop.ru%{REQUEST_URI} [R=301,L]
+    RewriteRule ^(.*)$ https://flavus-barbershop.ru/$1 [R=301,L]
 
-    # Redirect index.html to root URL
+    # index.html -> корень
     RewriteRule ^index\.html$ / [R=301,L]
-
-    # Защита конфиденциальных файлов (но НЕ блокируем admin полностью)
-    RewriteRule ^(?:\.git|composer\.json|composer\.lock|conf\.ini|lang\.ini|update\.php|phpmailer/).*$ - [F,L]
-
-    # Защита конкретных файлов в admin (но не всей папки)
-    RewriteRule ^admin/(?:conf\.ini|lang\.ini|error\.log)$ - [F,L]
-
-    # Custom 404 page
-    ErrorDocument 404 /404.html
 </IfModule>
 
-<IfModule mod_headers.c>
-    Header always set X-Content-Type-Options "nosniff"
-    Header always set X-Frame-Options "SAMEORIGIN"
-    Header always set Referrer-Policy "strict-origin-when-cross-origin"
-    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
-    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-</IfModule>
+# Запрет на просмотр папок
+Options -Indexes
 
-<IfModule mod_autoindex.c>
-    Options -Indexes
-</IfModule>
+# Страница 404
+ErrorDocument 404 /404.html
 
+# Главный файл по умолчанию
 DirectoryIndex index.html index.php
-
-# Разрешаем доступ к папке admin (но без листинга файлов)
-<IfModule mod_authz_core.c>
-    <Directory "admin">
-        Options -Indexes
-        Require all granted
-    </Directory>
-</IfModule>

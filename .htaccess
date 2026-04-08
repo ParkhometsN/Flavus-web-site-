@@ -1,20 +1,23 @@
-# .htaccess для проекта Flavus
-# SEO, HTTPS, canonical redirects и базовая защита
+# .htaccess для проекта Flavus (flavus-barbershop.ru)
+# SEO, HTTPS, базовая защита
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # Force HTTPS and non-www canonical domain
+    # Force HTTPS и правильный домен (flavus-barbershop.ru)
     RewriteCond %{HTTPS} !=on [OR]
-    RewriteCond %{HTTP_HOST} !^flavus\.ru$ [NC]
+    RewriteCond %{HTTP_HOST} !^flavus-barbershop\.ru$ [NC]
     RewriteRule ^ https://flavus-barbershop.ru%{REQUEST_URI} [R=301,L]
 
     # Redirect index.html to root URL
     RewriteRule ^index\.html$ / [R=301,L]
 
-    # Disable direct access to sensitive files and folders
-    RewriteRule ^(?:\.git|composer\.json|composer\.lock|conf\.ini|lang\.ini|admin/(?:conf|lang)\.ini|update\.php|phpmailer/).*$ - [F,L]
+    # Защита конфиденциальных файлов (но НЕ блокируем admin полностью)
+    RewriteRule ^(?:\.git|composer\.json|composer\.lock|conf\.ini|lang\.ini|update\.php|phpmailer/).*$ - [F,L]
+
+    # Защита конкретных файлов в admin (но не всей папки)
+    RewriteRule ^admin/(?:conf\.ini|lang\.ini|error\.log)$ - [F,L]
 
     # Custom 404 page
     ErrorDocument 404 /404.html
@@ -33,3 +36,11 @@
 </IfModule>
 
 DirectoryIndex index.html index.php
+
+# Разрешаем доступ к папке admin (но без листинга файлов)
+<IfModule mod_authz_core.c>
+    <Directory "admin">
+        Options -Indexes
+        Require all granted
+    </Directory>
+</IfModule>

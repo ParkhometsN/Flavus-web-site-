@@ -29,12 +29,12 @@ export function GetFooter(){
                                 <div class="adres_item">
                                     <h3>КОНТАКТЫ</h3>
                                     <ul>
-                                        <li><a href="mailto:FLAVUS@GMAIL.COM"><h4>FLAVUS@GMAIL.COM</h4></a></li>
+                                        <li><a href="mailto:flavus.barber@gmail.com"><h4>FLAVUS.BARBER@GMAIL.COM</h4></a></li>
                                         <li><a href="tel:+79110998673"><h4>+7 (911) 099-86-73</h4></a></li>
                                     </ul>
                                 </div>
                                 <div class="adres_item">
-                                    <h3>АДРЕСС</h3>
+                                    <h3>АДРЕС</h3>
                                     <ul>
                                         <li><h4>Санкт-Петербург, <br> Ультрамариновая ул., 8</h4></li>
                                     </ul>
@@ -42,8 +42,8 @@ export function GetFooter(){
                                 <div class="adres_item">
                                     <h3>СПРАВОЧНАЯ</h3>
                                     <ul>
-                                        <li><h4>ОГРНИП 316774600521210</h4></li>
-                                        <li><h4>ИНН 772072835461</h4></li>
+                                        <li><h4>ОГРНИП 319784700171139</h4></li>
+                                        <li><h4>ИНН 781135440008</h4></li>
                                     </ul>
                                 </div>
                             </div>

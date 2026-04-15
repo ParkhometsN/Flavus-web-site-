@@ -1,23 +1,11 @@
-# .htaccess для Reg.ru хостинга (flavus-barbershop.ru)
+# Разрешаем доступ ко всем
+Require all granted
 
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteBase /
+# Альтернативный вариант (если старый сервер)
+# Order allow,deny
+# Allow from all
 
-    # Редирект на HTTPS и правильный домен
-    RewriteCond %{HTTPS} off [OR]
-    RewriteCond %{HTTP_HOST} !^flavus-barbershop\.ru$ [NC]
-    RewriteRule ^(.*)$ https://flavus-barbershop.ru/$1 [R=301,L]
-
-    # index.html -> корень
-    RewriteRule ^index\.html$ / [R=301,L]
+# Включаем PHP-обработку (если нужно)
+<IfModule mod_php7.c>
+    php_flag display_errors on
 </IfModule>
-
-# Запрет на просмотр папок
-Options -Indexes
-
-# Страница 404
-ErrorDocument 404 /404.html
-
-# Главный файл по умолчанию
-DirectoryIndex index.html index.php
